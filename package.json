@@ -1,0 +1,11 @@
+{
+  "name": "video-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:diglopes/video-automation.git",
+  "author": "diglopes <diego-chez@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
