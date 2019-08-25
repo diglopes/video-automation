@@ -4,8 +4,8 @@ const sentenceBoundaryDetection = require("sbd");
 
 async function robot(content) {
   await fetchContentFromWikipedia(content);
-  saniteContent(content);
-  breakConentIntoSentences(content);
+  sanitizeContent(content);
+  breakContentIntoSentences(content);
 
   async function fetchContentFromWikipedia(content) {
     const algorithmiaAunthenticated = algorithmia(algorithmiaApiKey);
@@ -18,7 +18,7 @@ async function robot(content) {
     content.sourceContentOriginal = wikipediaContent.content;
   }
 
-  function saniteContent(content) {
+  function sanitizeContent(content) {
     const withoutBlankLinesAndMarkdown = removeBlankLinesAndMarkdown(
       content.sourceContentOriginal
     );
@@ -49,7 +49,7 @@ async function robot(content) {
     }
   }
 
-  function breakConentIntoSentences(content) {
+  function breakContentIntoSentences(content) {
     content.sentences = [];
 
     const sentences = sentenceBoundaryDetection.sentences(
