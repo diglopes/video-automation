@@ -4,6 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:diglopes/video-automation.git",
   "author": "diglopes <diego-chez@hotmail.com>",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
   "license": "MIT",
   "dependencies": {
     "algorithmia": "^0.3.10",
