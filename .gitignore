@@ -1,5 +1,8 @@
-#credencials
+# Credencials
 src/credentials/*.json
+
+# Content
+content.json
 
 # Logs
 logs
