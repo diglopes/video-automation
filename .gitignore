@@ -4,6 +4,7 @@ src/credentials/*.json
 # Content
 content.json
 src/content/*.png
+src/content/*.jpg
 
 # Logs
 logs

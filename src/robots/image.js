@@ -8,10 +8,10 @@ const googleSearchCredentials = require("../credentials/google-search.json");
 async function robot() {
   const content = state.load();
 
-  await fetchImagesOfAllSentences(content);
-  await downloadAllImages(content);
+  // await fetchImagesOfAllSentences(content);
+  // await downloadAllImages(content);
 
-  state.save(content);
+  // state.save(content);
 
   async function fetchImagesOfAllSentences(content) {
     for (const sentence of content.sentences) {
