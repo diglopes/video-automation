@@ -3,6 +3,7 @@ src/credentials/*.json
 
 # Content
 content.json
+src/content/*.png
 
 # Logs
 logs
